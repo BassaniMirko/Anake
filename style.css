@@ -1,0 +1,239 @@
+/* Stili di base */
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    font-family: Menlo, monospace;
+    overflow-x: hidden;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0); /* Imposta uno sfondo nero */
+    font-family: Menlo, monospace;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gradient {
+    width: 100%;
+    height: 1700px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    background: linear-gradient(180deg, black 48%, rgba(0, 0, 0, 0) 100%);
+    z-index: 999;
+}
+
+
+
+.regular-text {
+    font-weight: 400;
+    width: 890px;
+    position: absolute;
+    left: 300px;
+    top: 680px;
+    color: white;
+    font-size: 27px;
+    line-height: 130%;
+    word-wrap: break-word;
+    z-index: 999;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.rotated-block {
+    width: 786px;
+    height: 702px;
+    position: absolute;
+    left: -200px;
+    top: 400px;
+    transform: rotate(-19.60deg);
+    transform-origin: 0 0;
+    z-index: 999;
+    mix-blend-mode: screen;
+}
+
+/* Container immagini */
+.image-container {
+    position: relative;
+    height: 4000px; /* Spazio totale per gestire lo scroll */
+    background: #000000; /* Colore sfondo per evidenziare l'effetto */
+}
+
+.sticky-wrapper {
+    position: sticky;
+    top: 0;
+    height: 100vh; /* Occupa l'intera altezza della viewport */
+    width: 100vw; /* Occupa l'intera altezza della viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.sticky-content {
+    width: 3000px; /* Dimensione del contenitore immagine */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+
+.sticky-content img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background: #ffffff;
+}
+
+/* Altri contenuti */
+.container {
+    padding: 50px 20px;
+    background: #ffffff;
+    color: #ffffff;
+}
+
+.titolo {
+    font-weight: 1000;
+    width: min-content;
+    position: fixed;
+    left: 60px;
+    top: 40px;
+    color: white;
+    font-size: 40px;
+    line-height: 130%;
+    word-wrap: break-word;
+    z-index: 99999;
+    mix-blend-mode: exclusion;
+    
+
+
+}
+
+.color-button {
+    font-weight: 400;
+    width: min-content;
+    position: fixed;
+    left: 47%;
+    top: 48px;
+    color: white;
+    font-size: 30px;
+    line-height: 130%;
+    word-wrap: break-word;
+    z-index: 99999;
+    mix-blend-mode: exclusion;
+}
+
+.about-button {
+    font-weight: 400;
+    width: max-content;
+    position: fixed;
+    right: 60px;
+    top: 48px;
+    color: white;
+    font-size: 30px;
+    line-height: 130%;
+    word-wrap: break-word;
+    z-index: 99999;
+    mix-blend-mode: exclusion;
+}
+
+
+/* Footer container */
+.container-footer {
+    position: relative;
+    width: 100%;
+    height: 2100px; /* Altezza del footer */
+    background: rgb(255, 255, 255); /* Colore di sfondo di base */
+}
+
+/* Gradiente nel footer */
+.footer-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2000px; /* Altezza del gradiente */
+    background: linear-gradient(0deg, black 80%, rgba(0, 0, 0, 0) 100%);
+    z-index: 0; /* Dietro i testi */
+}
+
+/* Testi del footer */
+.text {
+    position: absolute;
+    color: white;
+    left: -3000px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 21.6px;
+    word-wrap: break-word;
+    z-index: 2; /* Sopra il gradiente */
+    width: min-content;
+}
+
+
+
+.mirko {
+    width: max-content;
+    left: 670px;
+    bottom: 60px; /* Posizione relativa all'interno del footer */
+}
+
+.lab {
+    width: max-content;
+    left: 1240px;
+    bottom: 60px;
+}
+
+.cv {
+    width: max-content;
+    left: 1714px;
+    bottom: 60px;
+}
+
+.year {
+    width: max-content;
+    left: 2130px;
+    bottom: 60px;
+}
+
+.container-stupido {
+    position: absolute;
+    top: 0; /* Reset per allineare correttamente il contenuto */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.rotated-background {
+    position: absolute;
+    top: -600px; /* Posizione verticale */
+    left: -140px; /* Posizione orizzontale */
+    width: 100%; /* Adatta il video alla larghezza del container */
+    height: 100%; /* Adatta il video all'altezza del container */
+    object-fit: cover; 
+    transform: rotate(21.66deg);
+    transform-origin: 0 0;  /* Puoi aggiungere uno sfondo, se necessario */
+    z-index: 999;
+    mix-blend-mode: screen;
+}
+
+.sticky-title {
+    font-size: 24px;
+    font-weight: regular;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    margin-right: 60px; /* Distanza dal container */
+    position: relative; /* Assicura che il titolo sia posizionato sotto il contenuto */
+    z-index: 10; /* Assicura che sia visibile sopra il background */
+}
