@@ -1,132 +1,203 @@
-/* Reset globale */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    width: 100%;
-    height: 100%;
-    background: #000000;
+/* Stili di base */
+body {
+    margin:0;
+    padding:0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0); /* Imposta uno sfondo nero */
     font-family: Menlo, monospace;
     overflow-x: hidden;
 }
 
-/* Testo e container principale */
 .container {
+    width: 98.7vw;
+    height: 100%;
+    padding: 0;
+    margin: 0;
     position: relative;
-    padding: 50px 20px;
-    color: #ffffff;
+    overflow-x: hidden;
 }
 
 .gradient {
     width: 100%;
-    height: 1700px;
+    height: 850px;
     position: absolute;
-    top: 0;
     left: 0;
+    top: 0px;
     background: linear-gradient(180deg, black 48%, rgba(0, 0, 0, 0) 100%);
+    z-index: 999;
 }
 
 .regular-text {
-    width: 80%;
-    margin: 100px auto;
-    font-size: 1.5rem;
-    line-height: 1.6;
-    text-align: center;
+    font-weight: 400;
+    width: 445px;
+    position: absolute;
+    left: 150px;
+    top: 340px;
     color: white;
-}
-
-/* Titoli e bottoni */
-.titolo, .color-button, .about-button {
-    position: fixed;
-    font-size: 1.5rem;
+    font-size: 13.5px;
+    line-height: 130%;
+    word-wrap: break-word;
     z-index: 999;
-    color: white;
-    mix-blend-mode: exclusion;
 }
 
-.titolo {
-    top: 20px;
-    left: 20px;
-}
-
-.color-button {
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.about-button {
-    top: 20px;
-    right: 20px;
-}
-
-/* Blocchi video */
-.rotated-block, .rotated-background {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-}
-
-.rotated-block video, .rotated-background video {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.bold-text {
+    font-weight: 700;
 }
 
 /* Container immagini */
 .image-container {
     position: relative;
-    height: 4000px;
-    background: black;
+    height: 2000px; /* Spazio totale per gestire lo scroll */
+    background: #000000; /* Colore sfondo per evidenziare l'effetto */
 }
 
 .sticky-wrapper {
     position: sticky;
     top: 0;
-    height: 100vh;
+    height: 100vh; /* Occupa l'intera altezza della viewport */
+    width: 100vw; 
+    display: flex;
+   
+    background-color: #ffffff;
+    z-index: 10; /* Assicura che sia visibile sopra altri contenuti */
+}
+
+.sticky-content {
+    width: 1500px; /* Dimensione del contenitore immagine */
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #ffffff;
+    z-index: 11;
 }
 
 .sticky-content img {
-    max-width: 90%;
-    max-height: 90%;
+    min-width: 100%;
+    min-height: 100%;
     object-fit: contain;
+    background: #ffffff;
 }
 
 .sticky-title {
-    font-size: 1.2rem;
-    color: white;
-    text-align: center;
-    margin: 20px 0;
+    position: absolute;
+   
+    right: 30px; /* Margine sinistro */
+    color: rgb(255, 255, 255); /* Colore del testo */
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+    z-index: 99999; /* Assicura che sia visibile sopra l'immagine */
+    mix-blend-mode: exclusion;
+    padding: 5px; /* Margine interno */
+    border-radius: 5px; /* Angoli arrotondati */
 }
 
-/* Footer */
+/* Altri contenuti */
+.container {
+    padding: 25px 10px;
+    background: #ffffff;
+    color: #ffffff;
+}
+
+.titolo {
+    font-weight: 1000;
+    width: min-content;
+    position: fixed;
+    left: 30px;
+    top: 20px;
+    color: white;
+    font-size: 20px;
+    line-height: 130%;
+    word-wrap: break-word;
+    z-index: 99999;
+    mix-blend-mode: exclusion;
+}
+
+.color-button {
+    font-weight: 400;
+    width: min-content;
+    position: fixed;
+    left: 47%;
+    top: 24px;
+    color: white;
+    font-size: 15px;
+    line-height: 130%;
+    word-wrap: break-word;
+    z-index: 99999;
+    mix-blend-mode: exclusion;
+}
+
+.about-button {
+    font-weight: 400;
+    width: max-content;
+    position: fixed;
+    right: 30px;
+    top: 24px;
+    color: white;
+    font-size: 15px;
+    line-height: 130%;
+    word-wrap: break-word;
+    z-index: 99999;
+    mix-blend-mode: exclusion;
+}
+
+/* Footer container */
 .container-footer {
     position: relative;
     width: 100%;
-    height: 500px;
-    background: black;
+    height: 1050px; /* Altezza del footer */
+    background: rgb(255, 255, 255); /* Colore di sfondo di base */
 }
 
 .footer-gradient {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, black 80%, rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 1000px; /* Altezza del gradiente */
+    background: linear-gradient(0deg, black 80%, rgba(0, 0, 0, 0) 100%);
+    z-index: 0; /* Dietro i testi */
 }
 
 .text {
     position: absolute;
-    font-size: 1rem;
     color: white;
+    left: -1500px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 10.8px;
+    word-wrap: break-word;
+    z-index: 2; /* Sopra il gradiente */
+    width: min-content;
 }
 
-.mirko { bottom: 20px; left: 20px; }
-.lab { bottom: 20px; left: 150px; }
-.cv { bottom: 20px; left: 300px; }
-.year { bottom: 20px; left: 450px; }
+.mirko {
+    width: max-content;
+    left: 335px;
+    bottom: 30px; /* Posizione relativa all'interno del footer */
+}
+
+.lab {
+    width: max-content;
+    left: 620px;
+    bottom: 30px;
+}
+
+.cv {
+    width: max-content;
+    left: 857px;
+    bottom: 30px;
+}
+
+.year {
+    width: max-content;
+    left: 1065px;
+    bottom: 30px;
+}
+
+
+video, img {
+    max-width: 100%;
+    height: auto;
+}
