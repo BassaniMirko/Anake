@@ -114,7 +114,7 @@ body {
     mix-blend-mode: exclusion;
 }
 
-.color-button {
+/* .color-button {
     font-weight: 400;
     width: min-content;
     position: fixed;
@@ -126,7 +126,7 @@ body {
     word-wrap: break-word;
     z-index: 99999;
     mix-blend-mode: exclusion;
-}
+} */
 
 .about-button {
     font-weight: 400;
