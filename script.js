@@ -3,7 +3,7 @@ function setupScroll(containerId, imageId, imagePath, totalImages) {
     const container = document.querySelector(`#${containerId}`);
     const stickyImage = document.getElementById(imageId);
 
-    const scrollArea = 2000; // Altezza totale dell'area di scorrimento per le immagini
+    const scrollArea = 1505; // Altezza totale dell'area di scorrimento per le immagini
 
     window.addEventListener('scroll', () => {
         const containerTop = container.offsetTop;
