@@ -27,11 +27,11 @@ function setupScroll(containerId, imageId, imagePath, totalImages) {
 }
 
 // Configura lo scroll per il primo container (img_2)
-setupScroll('container-2', 'sticky-image-2', 'img_2', 31);
+setupScroll('container-2', 'sticky-image-2', 'img_2', 33);
 
 // Configura lo scroll per il secondo container (img_1)
-setupScroll('container-1', 'sticky-image-1', 'img_1', 26);
+setupScroll('container-1', 'sticky-image-1', 'img_1', 28);
 
 // Configura lo scroll per il terzo container (img_3)
-setupScroll('container-3', 'sticky-image-3', 'img_3', 42);
+setupScroll('container-3', 'sticky-image-3', 'img_3', 44);
 
