@@ -201,3 +201,71 @@ video, img {
     max-width: 100%;
     height: auto;
 }
+
+
+.titolo {
+    font-weight: 1000;
+    width: max-content;
+    position: fixed;
+    right: 30px;
+    top: 24px;
+    color: white;
+    font-size: 20px;
+    line-height: 130%;
+    word-wrap: break-word;
+    z-index: 99999;
+    mix-blend-mode: exclusion;
+    text-decoration: none; /* Rimuove la sottolineatura di default */
+    transition: text-decoration 0.2s ease-in-out; /* Transizione per l'effetto */
+}
+
+.titolo:hover {
+    text-decoration: underline; /* Aggiunge la sottolineatura al passaggio del mouse */
+}
+
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Occupa tutta la larghezza della schermata */
+    height: 100vh; /* Occupa tutta l'altezza della schermata */
+    overflow: hidden; /* Nasconde il contenuto fuori dai limiti */
+    z-index: 1; /* Posizionamento sotto altri elementi */
+    mix-blend-mode: screen; /* Effetto di fusione */
+    z-index: 99999;
+}
+
+.video-container video {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%); /* Centra il video */
+    width: 100%; /* Occupa tutta la larghezza */
+    height: 100%; /* Occupa tutta l'altezza */
+    object-fit: cover; /* Il video copre l'intero container mantenendo le proporzioni */
+}
+
+
+.video-footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Occupa tutta la larghezza della schermata */
+    height: 100%; /* Occupa tutta l'altezza del footer */
+    overflow: hidden; /* Nasconde il contenuto fuori dai limiti */
+    z-index: 1; /* Posizionamento sotto altri elementi del footer */
+    mix-blend-mode: screen; /* Effetto di fusione */
+ 
+}
+
+.video-footer video {
+  
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%); /* Centra il video */
+    width: 100%; /* Occupa tutta la larghezza */
+    height: 100%; /* Occupa tutta l'altezza */
+    object-fit: cover; /* Il video copre l'intero container mantenendo le proporzioni */
+}

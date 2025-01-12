@@ -35,3 +35,26 @@ setupScroll('container-1', 'sticky-image-1', 'img_1', 27);
 // Configura lo scroll per il terzo container (img_3)
 setupScroll('container-3', 'sticky-image-3', 'img_3', 43);
 
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const aboutButton = document.querySelector('.titolo');
+
+    // Quando si clicca sul pulsante "About"
+    aboutButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Scorrimento fluido
+        });
+    });
+
+    // Quando il mouse è sopra il pulsante "About"
+    aboutButton.addEventListener('mouseover', () => {
+        aboutButton.style.textDecoration = 'underline'; // Aggiunge la sottolineatura
+    });
+
+    // Quando il mouse lascia il pulsante "About"
+    aboutButton.addEventListener('mouseout', () => {
+        aboutButton.style.textDecoration = 'none'; // Rimuove la sottolineatura
+    });
+});
