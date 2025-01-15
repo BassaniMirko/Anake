@@ -157,7 +157,7 @@ body {
     left: 0;
     width: 100vw;
     height: 1150px; /* Altezza del gradiente */
-    background: linear-gradient(0deg, black 70%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(0deg, black 75%, rgba(0, 0, 0, 0) 100%);
     z-index: 0; /* Dietro i testi */
 }
 
@@ -264,10 +264,11 @@ video, img {
 .video-footer video {
   
     position: absolute;
-    top: 50%;
-    left: 40%;
+    bottom: -600px;
+    left: 50%;
     transform: translate(-50%, -50%); /* Centra il video */
-    width: 100%; /* Occupa tutta la larghezza */
-    height: 100%; /* Occupa tutta l'altezza */
+    width: 90%; /* Occupa tutta la larghezza */
+    height: 90%; /* Occupa tutta l'altezza */
     object-fit: cover; /* Il video copre l'intero container mantenendo le proporzioni */
-    transform: rotate(50deg,);
+    
+}
