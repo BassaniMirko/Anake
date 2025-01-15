@@ -270,5 +270,5 @@ video, img {
     width: 90%; /* Occupa tutta la larghezza */
     height: 90%; /* Occupa tutta l'altezza */
     object-fit: cover; /* Il video copre l'intero container mantenendo le proporzioni */
-    
+    transform: rotate(50deg,);
 }
