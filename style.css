@@ -142,11 +142,12 @@ body {
     mix-blend-mode: exclusion;
 }
 
+
 /* Footer container */
 .container-footer {
     position: relative;
     width: 100%;
-    height: 1050px; /* Altezza del footer */
+    height: 1150px; /* Altezza del footer */
     background: rgb(255, 255, 255); /* Colore di sfondo di base */
 }
 
@@ -155,8 +156,8 @@ body {
     bottom: 0;
     left: 0;
     width: 100vw;
-    height: 1000px; /* Altezza del gradiente */
-    background: linear-gradient(0deg, black 80%, rgba(0, 0, 0, 0) 100%);
+    height: 1150px; /* Altezza del gradiente */
+    background: linear-gradient(0deg, black 70%, rgba(0, 0, 0, 0) 100%);
     z-index: 0; /* Dietro i testi */
 }
 
@@ -222,3 +223,51 @@ video, img {
 .titolo:hover {
     text-decoration: underline; /* Aggiunge la sottolineatura al passaggio del mouse */
 }
+
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Occupa tutta la larghezza della schermata */
+    height: 100vh; /* Occupa tutta l'altezza della schermata */
+    overflow: hidden; /* Nasconde il contenuto fuori dai limiti */
+    z-index: 1; /* Posizionamento sotto altri elementi */
+    mix-blend-mode: screen; /* Effetto di fusione */
+    z-index: 99999;
+    background-color: none;
+}
+
+.video-container video {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%); /* Centra il video */
+    width: 100%; /* Occupa tutta la larghezza */
+    height: 100%; /* Occupa tutta l'altezza */
+    object-fit: cover; /* Il video copre l'intero container mantenendo le proporzioni */
+}
+
+
+.video-footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Occupa tutta la larghezza della schermata */
+    height: 100%; /* Occupa tutta l'altezza del footer */
+    overflow: hidden; /* Nasconde il contenuto fuori dai limiti */
+    z-index: 1; /* Posizionamento sotto altri elementi del footer */
+    mix-blend-mode: screen; /* Effetto di fusione */
+    background-color: none;
+}
+
+.video-footer video {
+  
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%); /* Centra il video */
+    width: 100%; /* Occupa tutta la larghezza */
+    height: 100%; /* Occupa tutta l'altezza */
+    object-fit: cover; /* Il video copre l'intero container mantenendo le proporzioni */
+    transform: rotate(50deg,);
