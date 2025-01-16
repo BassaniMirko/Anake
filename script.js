@@ -66,5 +66,5 @@
                 loadingPage.style.display = "none"; // Nasconde la pagina di caricamento
                 mainContent.style.display = "block"; // Mostra il contenuto principale
             }, 1000); // Tempo per completare la transizione
-        }, 7000);
+        }, 10000);
     });
